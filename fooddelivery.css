@@ -1,0 +1,228 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+   scroll-behavior: smooth; 
+}
+
+/* navigation bar */
+
+#navBar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/*  nav:logo and image */
+
+#logoimg{
+    margin: 10px 10px;
+    height: 20%;
+    width: 20%;
+}
+
+#navBar ul{
+    display: flex;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+#navBar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navBar ul li{
+    list-style: none;
+    font-size: 1.3rem ;
+}
+
+#navBar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+#navBar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('./foodbg.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.860;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* services section  */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid black;
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background: #f2f2f2;
+}
+
+#services .box p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+#services .box img{
+    height: 147px;
+    margin: auto;
+    display: block;
+}
+
+
+/* client section  */
+#clientsection{
+    height: 344px;
+}
+
+#clientsection::before{
+    content: "";
+    position: absolute;
+    background: url(./foodbg1.jpg);
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientitems{
+    padding: 34px;
+}
+
+#clients img{
+    height: 130px;
+}
+
+/* contact section  */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(./contact.jpg) no-repeat center center/cover;
+
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contactbox input,#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contactbox form{
+    width: 40%;
+}
+
+#contactbox label{
+    font-size: 1.3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding-right: 9px 20px;
+}
+
+
+/* utility classes */
+
+.hprimary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+.hsecondary{
+    font-size: 2.0rem;
+    padding: 12px;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: turquoise;
+    color: rgb(10, 53, 53);
+    margin: 17px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
